@@ -1,6 +1,8 @@
 #!/usr/bin/env nextflow
 
 process sayHello {
+  container "${params.container}"
+  
   input: 
     val x
   output:
