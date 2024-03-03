@@ -19,4 +19,7 @@ process sayHello {
 
 workflow {
     println "Project: $workflow.projectDir"
+    println "Git info: $workflow.repository - $workflow.revision [$workflow.commitId]"
+    println "Cmd line: $workflow.commandLine"
+    println "Manifest's pipeline version: $workflow.manifest.version"
 }
