@@ -23,3 +23,8 @@ workflow {
     println "Cmd line: $workflow.commandLine"
     println "Manifest's pipeline version: $workflow.manifest.version"
 }
+
+workflow.onComplete {
+    println "Pipeline completed at: $workflow.complete"
+    println "Execution status: ${ workflow.success ? 'OK' : 'failed' }"
+}
