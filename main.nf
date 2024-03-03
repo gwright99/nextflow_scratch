@@ -22,6 +22,9 @@ workflow {
     println "Git info: $workflow.repository - $workflow.revision [$workflow.commitId]"
     println "Cmd line: $workflow.commandLine"
     println "Manifest's pipeline version: $workflow.manifest.version"
+
+    log.info session.config.bar
+    log.info session.config
 }
 
 workflow.onComplete {
