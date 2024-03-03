@@ -1,8 +1,8 @@
 #!/usr/bin/env nextflow
 
 process sayHello {
-  container "${params.container}"
-  
+  //container "${params.container}"
+
   input: 
     val x
   output:
@@ -13,6 +13,10 @@ process sayHello {
     """
 }
 
+// workflow {
+//   Channel.of('Hello', 'Hola') | sayHello | view
+// }
+
 workflow {
-  Channel.of('Hello', 'Hola') | sayHello | view
+    println "Project: $workflow.projectDir"
 }
