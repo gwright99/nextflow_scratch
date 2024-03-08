@@ -1,11 +1,7 @@
 # Reason for Existence
 
-Original ticket that prompted testing: `How to call CodeCommit codebase using nextflow cli (#38)`.
+Original ticket that prompted testing: [https://support.seqera.io/helpdesk/tickets/3781][https://support.seqera.io/helpdesk/tickets/3781].
 
 Synposis:
 
-- Top-level profiles have an include config to another include config. Want to see if:
-    1. Tower can find all 4 profiles (top-level and nested).
-    2. Nextflow can use nested profiles.
-
-Expectation is that (1) will be true; (2) will be false.
+Assign process to different queue depending on resource criteria.
