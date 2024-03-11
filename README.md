@@ -1,3 +1,3 @@
 # Reason for Existence
 
-Throwaway repo to test pipeline facets before contributing to shared repo.
+Checking out behaviour reported in [ticket 4652](https://support.seqera.io/helpdesk/tickets/4625).
